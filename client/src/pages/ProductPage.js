@@ -11,7 +11,7 @@ function ProductPage() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/products/${id}`);
+        const res = await axios.get(`https://perfume-woad-ten.vercel.app/api/products/${id}`);
         setProduct(res.data);
       } catch (error) {
         console.error('Error fetching product:', error);

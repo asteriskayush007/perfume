@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await axios.get('http://localhost:8000/api/products');
+      const res = await axios.get("https://perfume-woad-ten.vercel.app/api/products");
       console.log(res.data); // 👈 Add this line
       setProducts(res.data);
     };
