@@ -11,10 +11,12 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       const res = await axios.get('http://localhost:8000/api/products');
+      console.log(res.data); // 👈 Add this line
       setProducts(res.data);
     };
     fetchProducts();
   }, []);
+  
 
   return (
     <div className="home-page">
