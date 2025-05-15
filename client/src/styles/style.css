@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(to right, #ec4899, #f472b6, #fbcfe8);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    animation: pulse 2s infinite;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar-links li {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li:hover {
+    color: #ffe4e6;
+  }
+  
+  /* Banner */
+  .banner {
+    background: linear-gradient(to right, #ec4899, #f472b6, #fbcfe8);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .banner-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .banner-button {
+    background-color: #fff;
+    color: #ec4899;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .banner-button:hover {
+    background-color: #ffe4e6;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+  }
+  
+  .product-price {
+    color: #ec4899;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Product Page */
+  .product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff0f6;
+  }
+  
+  .product-coming-soon {
+    font-size: 28px;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Home */
+  .home-page {
+    min-height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+  
