@@ -33,7 +33,12 @@ mongoose.connect(process.env.MONGO_URI, {
 const productRoutes = require('./routes/productRoutes');
 app.use('/api/products', productRoutes);
 
-
+app.get('/',(req,res)=>{
+  res.send({
+    activeStatus:true,
+    error:false
+  })
+})
 
 // Server start
 const PORT = process.env.PORT || 8000;
