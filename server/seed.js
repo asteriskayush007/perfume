@@ -22,8 +22,8 @@ async function seedData() {
       price: 1299,
       sizes: ["50ml", "100ml"],
       images: [
-        "https://aqualogica.in/cdn/shop/files/shoot_a938da08-e236-4451-94c3-cf8652f0cf2e.jpg?v=1726640760&width=1346",
-        "https://aqualogica.in/cdn/shop/files/WhiteBG_96cb46a9-2333-4c99-b101-c6c12faec05b.jpg?v=1726640760&width=1346"
+        "https://azhausa.com/cdn/shop/files/OceanBreeze_1.jpg?v=1745218305&width=1946",
+        "https://azhausa.com/cdn/shop/files/OceanBreeze_1.jpg?v=1745218305&width=1946"
       ],
       reviews: []
     },
@@ -60,6 +60,17 @@ async function seedData() {
       ],
       reviews: []
     },
+    {
+      name: "Moody Wonder",
+      description: "Earthy and bold notes for a confident presence.",
+      price: 1699,
+      sizes: ["50ml", "100ml", "150ml"],
+      images: [
+        "https://azhausa.com/cdn/shop/files/OceanBreeze_1.jpg?v=1745218305&width=1946",
+        "https://azhausa.com/cdn/shop/files/OceanBreeze_1.jpg?v=1745218305&width=1946"
+      ],
+      reviews: []
+    }
     
   ];
 
